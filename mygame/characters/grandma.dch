@@ -1,0 +1,47 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+&"default_portrait": "grandma/normal",
+&"description": "祖母，她失去了记忆，但一直重复呢喃孙女阿禾喜欢荧草编的花环，记忆碎片里有婆婆和小女孩采荧草。",
+&"display_name": "grandma",
+&"mirror": false,
+&"nicknames": ["叶婆婆"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"grandma/happy": {
+"export_overrides": {
+"image": "\"res://UI/grandma_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"grandma/normal": {
+"export_overrides": {
+"image": "\"res://UI/grandma.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"grandma/sad": {
+"export_overrides": {
+"image": "\"res://UI/grandma_sad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}
