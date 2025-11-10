@@ -1,0 +1,61 @@
+join grandma (grandma/normal) 1
+grandma (grandma/normal): 阿禾......阿禾，，荧草......
+- 上前询问
+	leave --All--
+	join protagonist (protagonist/normal) 1
+	protagonist (protagonist/normal): 老婆婆，您需要帮助吗？
+	leave --All--
+	join grandma (grandma/normal) 1
+	grandma (grandma/normal): 谢谢小姑娘，婆婆年纪大了，有件事情记不清了，你能帮婆婆想想吗？
+	leave --All--
+	join protagonist (protagonist/normal) 1
+	protagonist (protagonist/normal): 好呀婆婆
+	leave --All--
+	join grandma (grandma/sad) 1
+	grandma (grandma/sad): 阿禾是我的孙女，但我好久没见到她了。我很想她，你能帮我问问她什么时候来看我吗？
+	leave --All--
+	join protagonist (protagonist/thinking) 1
+	label 第一次选择
+	- 询问阿禾在哪
+		leave --All--
+		join grandma (grandma/sad) 1
+		grandma (grandma/sad): 记不清楚了，太久没有见到阿禾了。
+		- 继续询问
+			jump 第一次选择
+		- 不再询问
+			jump 姥姥走开
+	- 询问阿禾长相
+		leave --All--
+		join grandma (grandma/sad) 1
+		grandma (grandma/sad): 记不清楚了，太久没有见到阿禾了。
+		- 继续询问
+			jump 第一次选择
+		- 不再询问
+			jump 姥姥走开
+	- 询问阿禾喜好
+		leave --All--
+		join grandma (grandma/normal) 1
+		grandma (grandma/normal): 我记得阿禾很喜欢荧草，她小时候我经常带她去村里大树下采荧草花。阿禾总是把荧草花编成花环戴在头上，蝴蝶被吸引过来，她又去抓蝴蝶，可爱极了。
+		leave --All--
+		join protagonist (protagonist/thinking) 1
+		protagonist (protagonist/thinking): （我要怎么找到阿禾呢？）
+		- 去村里问问
+			leave --All--
+			我去村里问了很多人，了解到阿禾很早之前就离开了这个村子，然后再也没有回来过。人海茫茫，看来是找不到了。
+			- 放弃寻找
+				jump 姥姥走开
+			- 去姥姥说的大树下看看
+				我看到了很多萤草花，我采摘了一些，学阿禾的样子编织了花环戴在头上。我回头看到婆婆正慈祥地看着我，并招呼我过去。
+				join protagonist 1
+				protagonist: 婆婆，我听村里人说，阿禾离开村子很多年了。
+				leave --All--
+				join grandma 1
+				grandma (grandma/normal): 孩子，谢谢你！我看到你在大树下戴着萤草花编制的花环的样子，真的很像我孙女。我想起来了，十年前一场迷雾笼罩着这里，村里的人们都失去了记忆。
+				grandma (grandma/normal): 我的孙女在小时候受到高人指点，高人赠送了她一条萤草花编制的项链，项链驱散迷雾，使得她暂时不受影响。
+				grandma (grandma/normal): 她希望能找到救治村民的办法，便离家远行了。你编制的萤草花环，能短暂隔离迷雾，让我临时恢复了记忆。半个时辰后花环将失效，在我还有记忆时，有个东西送给你。
+				- 接收礼物
+					我收到了图腾碎片。
+- 不予理会
+	label 姥姥走开
+	join grandma (grandma/sad) 1
+	grandma (grandma/sad): 老了老了，丢失的东西再也找不着了。
