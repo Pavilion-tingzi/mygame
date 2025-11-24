@@ -28,8 +28,12 @@ directories/dch_directory={
 "protagonist": "res://characters/protagonist.dch"
 }
 directories/dtl_directory={
+"Stephen": "res://timeline/Stephen.dtl",
 "timeline": "res://timeline/timeline.dtl"
 }
+layout/style_list=[]
+layout/default_style="Default"
+glossary/default_case_sensitive=true
 
 [editor_plugins]
 
