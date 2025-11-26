@@ -1,0 +1,10 @@
+label 新人入队
+欢迎加入上海毒刺美式橄榄球俱乐部
+- 好
+	欢迎Stephen
+	jump timeline/
+- 不好
+	可惜
+	再考虑考虑
+	[wait time="1.0"]
+	jump Stephen/新人入队
